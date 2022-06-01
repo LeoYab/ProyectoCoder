@@ -219,7 +219,21 @@ main {
     text-align: center;
 }
 
-
+.btnvolver {
+    background-image:url(../assets/img/btnup.png);
+    background-size: 100%;
+        background-color:#00669d6e;
+        border-radius: 50%;
+        left: 95%;
+        top: 85%;
+        position: fixed;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    
+    .btnvolver:hover{
+    background-color: #0097e9be;
+    }
 
 .btnvolver a{
     padding: 25px;
