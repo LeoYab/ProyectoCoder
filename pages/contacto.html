@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/icono.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/img/icono.png">
+    <title>DPELICULA</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="../index.html"><img src="../assets/img/logo_página.png" alt="Logo empresa"></a>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../pages/peliculas.html">PELÍCULAS</a></li>
+                <li><a href="../pages/series.html">SERIES</a></li>
+                <li><a href="../pages/estrenos.html">ESTRENOS</a></li>
+                <li><a href="../pages/noticias.html">NOTICIAS</a></li>
+            </ul>
+        </nav>
+        <nav class="navegacion__celu">
+            <a href=""><img src="../assets/img/menu.png" alt=""></a>
+            <div>
+                <ul class="navegacion__celu__ul">
+                    <li><a href="../pages/peliculas.html">PELÍCULAS</a></li>
+                    <li><a href="../pages/series.html">SERIES</a></li>
+                    <li><a href="../pages/estrenos.html">ESTRENOS</a></li>
+                    <li><a href="../pages/noticias.html">NOTICIAS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="busqueda">
+            <form method="get" enctype="text/plain">
+                <input type="search" name="srch" placeholder="Buscar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="login">
+            <ul>
+                <li>
+                    <a class="login__icon" href=""><img src="../assets/img/Login.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="login__text" href="">INGRESAR</a>
+                    <ul class="login__form">
+                        <li>
+                            <form method="get" enctype="text/plain">
+                                <div class="login--font">
+                                    <input type="text" name="usuario" id="user" placeholder="Usuario">
+                                </div>
+                                <div class="login--font">
+                                    <input type="password" name="password" id="pass" placeholder="Contraseña">
+                                </div>
+                                <div class="login--button">
+                                    <button type="submit">Ingresar</button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--------------------------MAIN--------------------------->
+    <main class="maincontact">
+
+        <div class="maincontact__iframe">
+            <h2>CONTACTO</h2>
+            <p>Comunicate con nuestro equipo ante cualquier duda.<br> Nos pondremos en contacto a la brevedad.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19123.30587407633!2d-58.3967288107575!3d-34.59614464045174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652571410752!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="maincontactdiv">
+            <form class="maincontact__form" action="" method="get" enctype="text/plain">
+                <div>
+                    <label for="usrname">Nombre</label>
+                    <br>
+                    <input class="maincontact__form--input" type="text" id="usrname" name="Nombre"
+                        placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="usrlastname">Apellido</label>
+                    <br>
+                    <input class="maincontact__form--input" type="text" name="Apellido" id="usrlastname"
+                        placeholder="Ingrese su apellido">
+                </div>
+                <div>
+                    <label for="email">E-Mail</label>
+                    <br>
+                    <input class="maincontact__form--input" type="email" name="email" id="email"
+                        placeholder="Ingrese su correo">
+                </div>
+                <br>
+                <div>
+                    <label for="puntaje">Puntúanos</label>
+                    <select name="puntaje" id="puntaje">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="usrtxt">Comentarios:</label>
+                    <br>
+                    <textarea class="maincontact__form--input" name="comment" id="usrtxt" cols="30" rows="10"
+                        placeholder="Ingrese su comentario"></textarea>
+                </div>
+                <div>
+                    <label for="newsletter">¿Desea recibir nuestro Newsletter?</label>
+                    <input type="checkbox" name="news" id="newsletter">
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </div>
+
+    </main>
+    <!--------------------------FOOTER--------------------------->
+    <footer>
+        <div class="socialmedia">
+            <ul>
+                <li class="socialmedia__li">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com"></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com"></a></li>
+                        <li class="twitter"><a href="https://twitter.com"></a></li>
+                    </ul>
+                </li>
+                <li class="copyright"><strong>Developed by Leonel Yaborski</strong></li>
+                <li>
+                    <ul>
+                        <li class="nosotros"><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
