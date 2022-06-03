@@ -1,0 +1,30 @@
+[33mcommit bf92c4efcb1167f6e19d87bcd25e46186c31bd2f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 92c619d 2c9fe2a
+Author: Leonel_Yaborski <leonel.yaborski@gmail.com>
+Date:   Wed Jun 1 19:30:21 2022 -0300
+
+    Se repara inconveniente con html
+
+[33mcommit 92c619d5bc55427ae86e1d54d228ba4d642768be[m
+Author: Leonel_Yaborski <leonel.yaborski@gmail.com>
+Date:   Wed Jun 1 19:10:51 2022 -0300
+
+    Se agrega boton volver btnup
+
+[33mcommit c4074f6d8dcb18999b879759cf5466f3ffa8007d[m[33m ([m[1;31morigin/ramadetrabajo[m[33m)[m
+Author: Leonel_Yaborski <leonel.yaborski@gmail.com>
+Date:   Wed Jun 1 19:08:44 2022 -0300
+
+    Se modifica Css btnup
+
+[33mcommit 362e90454a9a95d49a4d00028ebb28c78a18f888[m
+Author: Leonel_Yaborski <leonel.yaborski@gmail.com>
+Date:   Wed Jun 1 18:54:10 2022 -0300
+
+    Se realiza nuevo Master
+
+[33mcommit 2c9fe2a4c8a16056417858982c36dce4988c1a3f[m
+Author: Leonel_Yaborski <leonel.yaborski@gmail.com>
+Date:   Tue May 31 21:21:07 2022 -0300
+
+    First Commit
