@@ -30,7 +30,6 @@ header {
     background-color: #053650;
 }
 
-
 .logo {
     margin: 1rem;
 }
@@ -167,7 +166,6 @@ main {
     overflow: hidden;
 }
 
-
 .parallax {
     background-image: url(../assets/img/Trend/Slider.png);
     height: 65vh;
@@ -214,11 +212,30 @@ main {
     background-color: #0097e938;
 }
 
+.btnvolver {
+    background-image:url(../assets/img/btnup.png);
+    background-size: 100%;
+        background-color:#00669d6e;
+        border-radius: 50%;
+        left: 95%;
+        top: 85%;
+        position: fixed;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    
+    .btnvolver:hover{
+    background-color: #0097e9be;
+    }
+
+.btnvolver a{
+    padding: 25px;
+    float: left;
+}
+
 .seccion {
     text-align: center;
 }
-
-
 
 .seccion h2 {
     margin: 2rem 0;
@@ -691,13 +708,6 @@ main {
 footer {
     background-color: #053650;
     padding: 10px;
-    /* border-style: solid;
-    border-left: white;
-    border-right: white;
-    border-bottom: white;
-    background-image: url(../assets/img/Trama3.png);
-    background-repeat: repeat;*/
-
 }
 
 .socialmedia {
@@ -725,11 +735,6 @@ footer {
 .socialmedia__li ul li {
     transition: 0.2s;
 }
-
-/*.socialmedia__li ul li:hover {
-    filter: brightness(50%);
-}*/
-
 
 .facebook {
     width: 30px;
