@@ -164,7 +164,6 @@ header nav ul li a:hover {
 
 main {
     background-color: #161a22;
-    /*- background-image: url("https://www.transparenttextures.com/patterns/white-bed-sheet.png");*/
     overflow: hidden;
 }
 
@@ -219,26 +218,7 @@ main {
     text-align: center;
 }
 
-.btnvolver {
-    background-image:url(../assets/img/btnup.png);
-    background-size: 100%;
-        background-color:#00669d6e;
-        border-radius: 50%;
-        left: 95%;
-        top: 85%;
-        position: fixed;
-        z-index: 1;
-        transition: 0.2s;
-    }
-    
-    .btnvolver:hover{
-    background-color: #0097e9be;
-    }
 
-.btnvolver a{
-    padding: 25px;
-    float: left;
-}
 
 .seccion h2 {
     margin: 2rem 0;
@@ -280,11 +260,6 @@ main {
     color: aliceblue;
     background-color: #0e0e0ec2;
 }
-
-/*Iluminación de botón
-.seccion__article__div a span:hover{
-    background-color: #ffffff9f;
-}*/
 
 .Section__article__div--spanhover {
     display: none;
