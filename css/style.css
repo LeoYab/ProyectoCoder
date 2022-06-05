@@ -27,6 +27,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     background-color: #053650;
+
 }
 
 .logo {
@@ -788,16 +789,18 @@ footer {
     color: #0098e9;
 }
 
+
+
 @media screen and (max-width: 1200px) {
 
     /*----------------HEADER MEDIA-----------*/
-    header {
+ /*   header {
         display: grid;
         grid-template-areas:
             "logo nav login"
             "none busqueda nada";
         padding-bottom: 20px;
-    }
+    }*/
 
     .logo {
         grid-area: logo;
@@ -834,6 +837,7 @@ footer {
 
 }
 
+  /*----------------MEDIA 991----------------*/
 @media screen and (max-width: 991px){
 
 .navbar-nav li{
@@ -850,6 +854,9 @@ footer {
 .btnvolver{
     left: 90%;
 }
+.login{
+    display: none;
+}
 }
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
@@ -857,14 +864,15 @@ footer {
 
     /*----------------HEADER MEDIA TABLET-----------*/
 
-    header {
+  /*  header {
         display: grid;
         grid-template-areas:
             "none logo login"
             "none busqueda otra";
         padding-bottom: 20px;
-    }
+    }*/
 
+    
     .logo {
         grid-area: logo;
         margin-bottom: 1rem;
@@ -924,12 +932,7 @@ footer {
 
     .login {
         grid-area: login;
-        display: block;
         margin: auto;
-    }
-
-    .login__text {
-        display: none;
     }
 
     .btnvolver{
@@ -1010,7 +1013,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-
+   
     /*----------------MAIN MEDIA CEL----------------*/
 
     .parallax {
@@ -1162,7 +1165,7 @@ color: #0098e9;
 
 
 .container-fluid{
-    width: 80vw;
+    width: 100%;
 }
 
 .btn-outline-success {
@@ -1183,4 +1186,22 @@ color: #0098e9;
 
 .btn-check:focus+.btn, .btn:focus {
      box-shadow:none;
+}
+
+h2, h3 {
+    font-weight: 600;
+    margin: 2rem;
+   
+}
+
+.navbar-expand-lg {
+    width: 100%;
+}
+
+.input-group{
+    margin:1rem 0;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ffffff;
 }
