@@ -55,7 +55,7 @@ header {
     /*border-radius: 1rem;*/
     color: #0d0d0d;
     height: 25px;
-    width: 15rem;
+    /*width: 15rem;*/
 }
 
 .busqueda form button {
@@ -834,8 +834,23 @@ footer {
 
 }
 
+@media screen and (max-width: 991px){
 
+.navbar-nav li{
+    border-bottom: 1px solid white;
+}
 
+.navbar-nav .lineout{
+    border-bottom: none;
+}
+
+.parallax__div{
+    display: none;
+}
+.btnvolver{
+    left: 90%;
+}
+}
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
 @media screen and (max-width: 768px) {
@@ -917,6 +932,16 @@ footer {
         display: none;
     }
 
+    .btnvolver{
+        left: 85%;
+    }
+
+    
+     /*----------------MAIN MEDIA TABLET-----------*/
+
+     .parallax__div{
+         display: none;
+     }
 
     /*----------------PELICULA MEDIA TABLET-----------*/
     .trailer iframe {
@@ -1117,4 +1142,45 @@ footer {
         order: 1;
     }
 
+}
+
+/*-----------------------MOD BOOTSTRAP-------------------------*/
+
+/*-----------------------HEADER-------------------------*/
+
+.nav-item a{
+    color: aliceblue;
+    margin: 0.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-item a:hover{
+color: #0098e9;
+}
+
+
+
+.container-fluid{
+    width: 80vw;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0098e9;
+    --bs-btn-hover-border-color: #0098e9;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #00679d;
+    --bs-btn-active-border-color: #00679d;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #00679d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+     box-shadow:none;
 }
