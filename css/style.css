@@ -5,9 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
@@ -18,9 +20,10 @@ body {
     background-color: #161a22;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 /*----------------HEADER----------------*/
 header {
     display: flex;
@@ -29,6 +32,11 @@ header {
     background-color: #053650;
 
 }
+
+.lognav {
+    display: none;
+}
+
 
 .logo {
     margin: 1rem;
@@ -72,6 +80,18 @@ header {
 
 .busqueda form button:hover {
     background-color: #0098e9;
+}
+
+.btnlogin {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.btnlogin__title h6 {
+    margin-top: .5rem;
+    font-weight: 800;
 }
 
 
@@ -214,22 +234,22 @@ main {
 }
 
 .btnvolver {
-    background-image:url(../assets/img/btnup.png);
+    background-image: url(../assets/img/btnup.png);
     background-size: 100%;
-        background-color:#00669d6e;
-        border-radius: 50%;
-        left: 95%;
-        top: 85%;
-        position: fixed;
-        z-index: 1;
-        transition: 0.2s;
-    }
-    
-    .btnvolver:hover{
-    background-color: #0097e9be;
-    }
+    background-color: #00669d6e;
+    border-radius: 50%;
+    left: 95%;
+    top: 85%;
+    position: fixed;
+    z-index: 1;
+    transition: 0.2s;
+}
 
-.btnvolver a{
+.btnvolver:hover {
+    background-color: #0097e9be;
+}
+
+.btnvolver a {
     padding: 25px;
     float: left;
 }
@@ -283,7 +303,7 @@ main {
     display: none;
     position: absolute;
     left: 60px;
-    bottom: 160px;
+    bottom: 230px;
     padding: 0 1rem;
     border-style: solid;
     border-radius: 0.2rem;
@@ -708,7 +728,6 @@ main {
 
 footer {
     background-color: #053650;
-    padding: 10px;
 }
 
 .socialmedia {
@@ -719,6 +738,7 @@ footer {
 .socialmedia ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .socialmedia ul li {
@@ -771,31 +791,38 @@ footer {
 }
 
 .contacto a {
-    color: aliceblue;
+    color:#ffffff;
     text-decoration: none;
     transition: 0.2s;
 }
 
-.contacto a:hover {
+/*.contacto a:hover {
     color: #0098e9;
-}
+}*/
 
 .nosotros a {
-    color: aliceblue;
+    color:#ffffff;
     text-decoration: none;
     transition: 0.2s;
 }
 
-.nosotros a:hover {
+/*.nosotros a:hover {
     color: #0098e9;
-}
+}*/
 
+.copyright {
+    text-align: center;
+    font-weight: 100;
+    background-color: #042b40;
+    padding: 1rem;
+
+}
 
 
 @media screen and (max-width: 1200px) {
 
     /*----------------HEADER MEDIA-----------*/
- /*   header {
+    /*   header {
         display: grid;
         grid-template-areas:
             "logo nav login"
@@ -838,26 +865,39 @@ footer {
 
 }
 
-  /*----------------MEDIA 991----------------*/
-@media screen and (max-width: 991px){
 
-.navbar-nav li{
-    border-bottom: 1px solid white;
-}
+/*----------------MEDIA 991----------------*/
+@media screen and (max-width: 991px) {
 
-.navbar-nav .lineout{
-    border-bottom: none;
-}
+    .navbar-nav li {
+        border-bottom: 1px solid white;
+    }
 
-.parallax__div{
-    display: none;
-}
-.btnvolver{
-    left: 90%;
-}
-.login{
-    display: none;
-}
+    .navbar-nav .lineout {
+        border-bottom: none;
+    }
+
+    .parallax__div {
+        display: none;
+    }
+
+    .btnvolver {
+        left: 90%;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .lognav {
+        display: block;
+    }
+
+    .btnlog {
+        display: none;
+    }
+
+
 }
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
@@ -865,7 +905,7 @@ footer {
 
     /*----------------HEADER MEDIA TABLET-----------*/
 
-  /*  header {
+    /*  header {
         display: grid;
         grid-template-areas:
             "none logo login"
@@ -873,7 +913,7 @@ footer {
         padding-bottom: 20px;
     }*/
 
-    
+
     .logo {
         grid-area: logo;
         margin-bottom: 1rem;
@@ -936,16 +976,16 @@ footer {
         margin: auto;
     }
 
-    .btnvolver{
+    .btnvolver {
         left: 85%;
     }
 
-    
-     /*----------------MAIN MEDIA TABLET-----------*/
 
-     .parallax__div{
-         display: none;
-     }
+    /*----------------MAIN MEDIA TABLET-----------*/
+
+    .parallax__div {
+        display: none;
+    }
 
     /*----------------PELICULA MEDIA TABLET-----------*/
     .trailer iframe {
@@ -953,7 +993,7 @@ footer {
         width: 100%;
     }
 
-/*----------------NOTICIAS MEDIA TABLET-----------*/
+    /*----------------NOTICIAS MEDIA TABLET-----------*/
 
     .secciongridart__seccion__div2-1 iframe {
         display: block;
@@ -992,20 +1032,18 @@ footer {
     }
 
     .contacto a {
-        background-color: #00679d;
+        
         padding: 0 10px;
         text-align: center;
     }
 
     .nosotros a {
-        background-color: #00679d;
+      
         padding: 0 10px;
         text-align: center;
     }
 
-    .copyright {
-        order: 1;
-    }
+
 
 
 }
@@ -1014,7 +1052,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-   
+
     /*----------------MAIN MEDIA CEL----------------*/
 
     .parallax {
@@ -1130,21 +1168,7 @@ footer {
         justify-content: center;
     }
 
-    .contacto a {
-        background-color: #00679d;
-        padding: 0 10px;
-        text-align: center;
-    }
 
-    .nosotros a {
-        background-color: #00679d;
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    .copyright {
-        order: 1;
-    }
 
 }
 
@@ -1152,20 +1176,22 @@ footer {
 
 /*-----------------------HEADER-------------------------*/
 
-.nav-item a{
+.nav-item a {
     color: aliceblue;
     margin: 0.5rem;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.nav-item a:hover{
-color: #0098e9;
+.nav-item a:hover {
+    color: #0098e9;
 }
 
+.navbar-toggler {
+    border: none;
+}
 
-
-.container-fluid{
+.container-fluid {
     width: 100%;
 }
 
@@ -1175,7 +1201,7 @@ color: #0098e9;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #0098e9;
     --bs-btn-hover-border-color: #0098e9;
-    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #00679d;
     --bs-btn-active-border-color: #00679d;
@@ -1185,28 +1211,29 @@ color: #0098e9;
     --bs-gradient: none;
 }
 
-.btn-check:focus+.btn, .btn:focus {
-     box-shadow:none;
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: 600;
     margin: 2rem;
-   
+
 }
 
 .navbar-expand-lg {
     width: 100%;
 }
 
-.input-group{
-    margin:1rem 0;
+.input-group {
+    margin: 1rem 0;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
     color: #ffffff;
 }
 
-.buscador{
-    
-}
+
