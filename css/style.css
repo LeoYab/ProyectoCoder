@@ -40,7 +40,7 @@ header {
 
 .logo {
     margin: 1rem;
-}
+}   
 
 .contspan{
     display: none;
@@ -733,6 +733,7 @@ main {
 
 footer {
     background-color: #053650;
+    margin-top: 1rem;
 }
 
 .socialmedia {
@@ -744,11 +745,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 .socialmedia ul li {
     margin: 0 0.8em;
     display: inline-block;
+    justify-items: center;
 }
 
 .socialmedia ul li strong {
@@ -761,7 +764,17 @@ footer {
 .socialmedia__li ul li {
     transition: 0.2s;
 }
+.facebook, .instagram, .twitter, a i{
+    font-size: 20px;
+    color: #ffffff;
+}
 
+.facebook, .instagram, .twitter, a i:hover{
+    color: #0098e9;
+    transform: scale(1.1);
+    transition: ease-in-out .1s;
+}
+/*
 .facebook {
     width: 30px;
     height: 30px;
@@ -794,7 +807,7 @@ footer {
 .twitter:hover {
     background-image: url(../assets/img/Social/Twitter2.png);
 }
-
+*/
 .contacto a {
     color:#ffffff;
     text-decoration: none;
@@ -1257,4 +1270,21 @@ h3 {
 .seccion__article .owl-nav{
     font-size: 40px;
     margin-top: 0;
+}
+
+.owl-nav button span{
+    background: #41464b54;
+    border-radius: 10px;
+    color: inherit;
+    border: none;
+    padding: 0 50px;
+    font: inherit;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+}
+.owl-nav button span:hover{
+    background: #f8fafd54;
+    border-radius: 10px;
 }
