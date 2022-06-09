@@ -267,8 +267,8 @@ main {
 
 .seccion__article__div {
     position: relative;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 1.5rem;
 }
 
@@ -277,6 +277,9 @@ main {
     font-size: 1rem;
 }
 
+.seccion__article__div__div{
+    position: relative;
+}
 .seccion__article__div a img {
     border-radius: 0.3rem;
     transition: transform .2s;
@@ -296,8 +299,8 @@ main {
 .Section__article__div--spanhover {
     display: none;
     position: absolute;
-    left: 60px;
-    bottom: 230px;
+    left: 25%;
+    bottom: 55%;
     padding: 0 1rem;
     border-style: solid;
     border-radius: 0.2rem;
@@ -309,12 +312,15 @@ main {
     margin: 1rem;
 }
 
-.infomovie h2 {
-    margin: 2rem;
+.infomovie h2{
+    margin: 2rem 0;
     text-align: center;
     font-size: 2.5rem;
 }
 
+.infomovie h3{
+    margin: 1rem 0;
+}
 .infomovie p {
     margin: 1rem;
     font-family: 'Kanit', sans-serif;
@@ -855,7 +861,33 @@ a i:hover {
     .contspan {
         display: block;
     }
+
+    .maincontactdiv {
+        text-align: center;
+        padding: 0 0 1rem 0;
+    }
+
+    .secciongridart__seccion2 {
+
+        display: grid;
+        grid-template-areas:
+            "seccion1"
+            "seccion2"
+            "seccion3"
+            "seccion4";
+        gap: 10px;
+    }
+
+    .seccion__article__div a:hover span {
+        display: none;
+    }
+
+    .seccion__article__div a:hover img {
+        transform: none;
+    }
 }
+
+
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
 
