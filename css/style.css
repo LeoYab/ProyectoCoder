@@ -1288,3 +1288,15 @@ h3 {
     background: #f8fafd54;
     border-radius: 10px;
 }
+
+.btn-primary{
+    background-color: #053650;
+    border-color: #ffffff;
+
+}
+
+.btn-primary:hover{
+background-color: #0098e9;
+border-color: none;
+--bs-btn-hover-border-color:none;
+}

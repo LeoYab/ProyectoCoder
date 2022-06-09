@@ -5,82 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----BOOSTRAP----->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="icon" href="../assets/img/icono.png" />
+    <!-----AOS ----->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-----ICONOS----->
+    <script src="https://kit.fontawesome.com/3f685ba242.js" crossorigin="anonymous"></script>
+    <!-----CAROUSEL----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/icono.png">
     <title>DPELICULA</title>
 </head>
 
 <body>
+    <!--------------------------HEADER--------------------------->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <span class="contspan"></span>
+                <!-----LOGO----->
                 <a class="navbar-brand" id="logo" href="../index.html"><img src="../assets/img/logo_página.png"
                         alt="Logo empresa"></a>
+                <!-----MENU HAMBURGUESA----->
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-----OPCIONES DE MENU ----->
                 <div class="collapse navbar-collapse text-center justify-content-between" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-
+                        <!-----LOGIN CEL----->
                         <li class="nav-item dropdown lognav">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">LOGIN</a>
-
-                            <form class="dropdown-menu navbar-toggler" method="get" enctype="text/plain">
+                            <form class="dropdown-item navbar-toggler mb-3" method="get" enctype="text/plain">
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1"></span>
-                                    <input type="text" name="usuario" class="form-control" placeholder="Usuario"
+                                    <input type="email" name="usuario" class="form-control" placeholder="Usuario"
                                         aria-label="Usuario" aria-describedby="basic-addon1" id="user">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1"></span>
-                                    <input type="password" name="clave" class="form-control" placeholder="Contraseña"
-                                        aria-label="Clave" aria-describedby="basic-addon1" id="pass">
+                                    <input type="password" class="form-control" placeholder="Contraseña">
                                 </div>
                                 <div class="login--button">
                                     <button class="btn btn-outline-success" type="submit">Ingresar</button>
                                 </div>
                             </form>
                         </li>
-
                         <li class="nav-item"><a class="nav-link" href="#seccionpeli">PELÍCULAS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#seccionserie">SERIES</a></li>
                         <li class="nav-item"><a class="nav-link" href="#seccionestreno">ESTRENOS</a></li>
-                        <li class="nav-item lineout"><a class="nav-link" href="./pages/noticias.html">NOTICIAS</a></li>
+                        <li class="nav-item lineout"><a class="nav-link" href="../pages/noticias.html">NOTICIAS</a></li>
                     </ul>
+                    <!-----BUSCADOR----->
                     <form class="d-flex" role="search" method="get" enctype="text/plain">
                         <input class="form-control me-2" type="search" name="srch" placeholder="Buscar">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
-
-                <div class="dropdown">
+                <!-----LOGIN PC----->
+                <div class="dropdown btnlog">
                     <div class="btnlogin">
-                        <div class="login__icon btnlogin__title" type="button"  data-bs-toggle="dropdown" aria-expanded="false"
-                        data-bs-auto-close="outside"><img src="../assets/img/Login.png" alt=""><h6>INGRESAR</h6></div>
-
+                        <div class="login__icon btnlogin__title" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside"><img src="../assets/img/Login.png"
+                                alt="">
+                            <h6>INGRESAR</h6>
+                        </div>
                         <form class="dropdown-menu p-4">
                             <div class="mb-3">
                                 <label for="exampleDropdownFormEmail2" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail2"
-                                    placeholder="correo@ejemplo.com">
+                                <input type="email" class="form-control" placeholder="correo@ejemplo.com">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleDropdownFormPassword2" class="form-label">Clave</label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword2"
-                                    placeholder="Contraseña">
+                                <input type="password" class="form-control" placeholder="Contraseña">
                             </div>
                             <div class="mb-3">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                    <label class="form-check-label" for="dropdownCheck2">
-                                        Recordarme
-                                    </label>
+                                    <label class="form-check-label" for="dropdownCheck2">Recordarme</label>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Ingresar</button>
@@ -91,7 +105,7 @@
         </nav>
     </header>
     <!--------------------------MAIN--------------------------->
-    <main class="">
+    <main>
 
         <div class="container">
             <div class="row d-flex align-items-center">
@@ -250,23 +264,62 @@
             <ul>
                 <li class="socialmedia__li">
                     <ul>
-                        <li class="facebook"><a href="https://www.facebook.com"></a></li>
-                        <li class="instagram"><a href="https://www.instagram.com"></a></li>
-                        <li class="twitter"><a href="https://twitter.com"></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com"><i
+                                    class="fa-brands fa-facebook fa-lg "></i></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com"><i
+                                    class="fa-brands fa-instagram fa-lg"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        </li>
                     </ul>
                 </li>
-                <li class="copyright"><strong>Developed by Leonel Yaborski</strong></li>
                 <li>
                     <ul>
-                        <li class="nosotros"><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nosotros btn btn-outline-success"><a href="../pages/nosotros.html">NOSOTROS</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
+        <div class="copyright">
+            <h6>© 2022 Copyright: Leonel Yaborski</h6>
+        </div>
     </footer>
+    <!------AOS------>
+    <script>
+        AOS.init();
+    </script>
+    <!------BOOSTRAP------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <!------CAROUSEL------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
