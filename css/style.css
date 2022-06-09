@@ -25,26 +25,25 @@ html {
 }
 
 /*----------------HEADER----------------*/
+
 header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     background-color: #053650;
-
 }
 
 .lognav {
     display: none;
 }
 
-
 .logo {
     margin: 1rem;
-}   
+}
 
-.contspan{
+.contspan {
     display: none;
-width: 54px;
+    width: 54px;
 }
 
 .navegacion {
@@ -62,7 +61,6 @@ width: 54px;
 .busqueda form {
     display: flex;
     gap: 10px;
-
 }
 
 .busqueda input {
@@ -119,8 +117,6 @@ width: 54px;
     text-decoration: none;
 }
 
-
-
 .login:hover ul li ul li {
     display: block;
     position: absolute;
@@ -129,8 +125,6 @@ width: 54px;
     padding: 10px;
     /*border-radius: 0.3em;*/
 }
-
-
 
 .login--font input {
     /*border-radius: 0.5rem;*/
@@ -164,7 +158,6 @@ width: 54px;
     transition: 0.2s;
 }
 
-
 .login form button:hover {
     background-color: #0098e9;
 }
@@ -182,7 +175,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #0098e9;
-
 }
 
 /*----------------MAIN----------------*/
@@ -267,12 +259,10 @@ main {
     margin: 2rem 0;
 }
 
-
 .seccion__article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .seccion__article__div {
@@ -297,7 +287,6 @@ main {
     filter: brightness(70%);
 }
 
-
 .seccion__article__div a:hover span {
     display: block;
     color: aliceblue;
@@ -313,11 +302,7 @@ main {
     border-style: solid;
     border-radius: 0.2rem;
     border-width: 2px;
-
-
 }
-
-
 
 /*----------------PELICULAS----------------*/
 .infomovie {
@@ -441,14 +426,12 @@ main {
     background-color: #0098e9;
 }
 
-
 .maincontact__form select {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: #282828;
 }
-
 
 /*----------------ACTORES----------------*/
 
@@ -527,8 +510,8 @@ main {
     border: solid 2px white;
 }
 
-
 /*----------------NOTICIAS SEMANALES----------------*/
+
 .parallax__div2 {
     display: flex;
     justify-content: center;
@@ -539,9 +522,7 @@ main {
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-
     padding: 50px 30px;
-
 }
 
 .parallax__div2 h3 {
@@ -595,7 +576,6 @@ main {
     border-radius: 20px;
     padding: 1rem;
 }
-
 
 .secciongridart__seccion__div2-2 img,
 .secciongridart__seccion__div2-3 img,
@@ -684,7 +664,6 @@ main {
     column-gap: 5rem;
 }
 
-
 .jorgehover {
     width: 165px;
     height: 165px;
@@ -758,75 +737,40 @@ footer {
     font-family: 'Kanit', sans-serif;
     font-weight: 100;
     font-size: 1rem;
-
 }
 
 .socialmedia__li ul li {
     transition: 0.2s;
 }
-.facebook, .instagram, .twitter, a i{
+
+.facebook,
+.instagram,
+.twitter,
+a i {
     font-size: 20px;
     color: #ffffff;
 }
 
-.facebook, .instagram, .twitter, a i:hover{
+.facebook,
+.instagram,
+.twitter,
+a i:hover {
     color: #0098e9;
     transform: scale(1.1);
     transition: ease-in-out .1s;
 }
-/*
-.facebook {
-    width: 30px;
-    height: 30px;
-    background-image: url(../assets/img/Social/Facebook.png);
-    background-repeat: no-repeat;
-}
 
-.facebook:hover {
-    background-image: url(../assets/img/Social/Facebook2.png);
-}
-
-.instagram {
-    width: 30px;
-    height: 30px;
-    background-image: url(../assets/img/Social/Instagram.png);
-    background-repeat: no-repeat;
-}
-
-.instagram:hover {
-    background-image: url(../assets/img/Social/Instagram2.png);
-}
-
-.twitter {
-    width: 30px;
-    height: 30px;
-    background-image: url(../assets/img/Social/Twitter.png);
-    background-repeat: no-repeat;
-}
-
-.twitter:hover {
-    background-image: url(../assets/img/Social/Twitter2.png);
-}
-*/
 .contacto a {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.2s;
 }
-
-/*.contacto a:hover {
-    color: #0098e9;
-}*/
 
 .nosotros a {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.2s;
 }
-
-/*.nosotros a:hover {
-    color: #0098e9;
-}*/
 
 .copyright {
     text-align: center;
@@ -836,24 +780,14 @@ footer {
 
 }
 
-
 @media screen and (max-width: 1200px) {
 
     /*----------------HEADER MEDIA-----------*/
-    /*   header {
-        display: grid;
-        grid-template-areas:
-            "logo nav login"
-            "none busqueda nada";
-        padding-bottom: 20px;
-    }*/
 
     .logo {
         grid-area: logo;
         margin-bottom: 0;
     }
-
-
 
     .navegacion {
         grid-area: nav;
@@ -873,7 +807,6 @@ footer {
     .nosotros__seccion {
         width: 100%;
         align-items: center;
-
     }
 
     .nosotros__equipo__integrantes {
@@ -883,8 +816,8 @@ footer {
 
 }
 
-
 /*----------------MEDIA 991----------------*/
+
 @media screen and (max-width: 991px) {
 
     .navbar-nav li {
@@ -915,27 +848,20 @@ footer {
         display: none;
     }
 
-    .seccion__article .owl-nav{
+    .seccion__article .owl-nav {
         display: none;
     }
-    .contspan{
+
+    .contspan {
         display: block;
-        }
+    }
 }
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
+
 @media screen and (max-width: 768px) {
 
     /*----------------HEADER MEDIA TABLET-----------*/
-
-    /*  header {
-        display: grid;
-        grid-template-areas:
-            "none logo login"
-            "none busqueda otra";
-        padding-bottom: 20px;
-    }*/
-
 
     .logo {
         grid-area: logo;
@@ -989,7 +915,6 @@ footer {
         grid-area: busqueda;
     }
 
-
     .busqueda form button {
         display: none;
     }
@@ -1002,7 +927,6 @@ footer {
     .btnvolver {
         left: 85%;
     }
-
 
     /*----------------MAIN MEDIA TABLET-----------*/
 
@@ -1055,26 +979,22 @@ footer {
     }
 
     .contacto a {
-        
+
         padding: 0 10px;
         text-align: center;
     }
 
     .nosotros a {
-      
+
         padding: 0 10px;
         text-align: center;
     }
-
-
-
 
 }
 
 /*-----------------------MEDIA CEL QUERY-------------------------*/
 
 @media screen and (max-width: 480px) {
-
 
     /*----------------MAIN MEDIA CEL----------------*/
 
@@ -1121,7 +1041,6 @@ footer {
         background-color: #ffffff0a;
     }
 
-
     .secciongridart__seccion__div__imp1,
     .secciongridart__seccion__div__imp2 {
         display: flex;
@@ -1148,7 +1067,6 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         padding: 50px 30px;
-
     }
 
     .parallax__div2 h3 {
@@ -1190,9 +1108,6 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
-
-
-
 }
 
 /*-----------------------MOD BOOTSTRAP-------------------------*/
@@ -1224,14 +1139,10 @@ footer {
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #0098e9;
     --bs-btn-hover-border-color: #0098e9;
-    --bs-btn-focus-shadow-rgb: 25, 135, 84;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #00679d;
     --bs-btn-active-border-color: #00679d;
-    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #00679d;
-    --bs-btn-disabled-bg: transparent;
-    --bs-gradient: none;
 }
 
 .btn-check:focus+.btn,
@@ -1259,20 +1170,19 @@ h3 {
     color: #ffffff;
 }
 
-
-#logo{
+#logo {
     margin-right: 0;
 }
 
 /*-----------------------CAROUSEL-------------------------*/
 
 
-.seccion__article .owl-nav{
+.seccion__article .owl-nav {
     font-size: 40px;
     margin-top: 0;
 }
 
-.owl-nav button span{
+.owl-nav button span {
     background: #41464b54;
     border-radius: 10px;
     color: inherit;
@@ -1281,22 +1191,27 @@ h3 {
     font: inherit;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover{
+.owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
 }
-.owl-nav button span:hover{
+
+.owl-nav button span:hover {
     background: #f8fafd54;
     border-radius: 10px;
 }
 
-.btn-primary{
-    background-color: #053650;
+.btn-primary {
+    background-color: #0f5e89;
     border-color: #ffffff;
 
 }
 
-.btn-primary:hover{
-background-color: #0098e9;
-border-color: none;
---bs-btn-hover-border-color:none;
+.btn-primary:hover {
+    background-color: #0098e9;
+    border-color: none;
+    --bs-btn-hover-border-color: none;
+}
+
+.btn {
+    --bs-btn-focus-box-shadow: none;
 }
