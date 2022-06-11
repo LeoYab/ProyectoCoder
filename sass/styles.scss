@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -363,8 +365,12 @@ main {
                 border: solid 2px white;
             }
         }
-/*----------------NOTICIAS SEMANALES----------------*/
-        &__div2-1, &__div2-2, &__div2-3, &__div2-4 {
+
+        /*----------------NOTICIAS SEMANALES----------------*/
+        &__div2-1,
+        &__div2-2,
+        &__div2-3,
+        &__div2-4 {
             text-align: justify;
             margin: 1em;
             background-color: #ffffff0a;
@@ -383,7 +389,7 @@ main {
             }
         }
 
-        &__div2-1{
+        &__div2-1 {
             grid-area: seccion1;
 
             & iframe {
@@ -395,7 +401,7 @@ main {
 
         &__div2-2 {
             grid-area: seccion2;
-            
+
         }
 
         &__div2-3 {
@@ -440,7 +446,174 @@ main {
 }
 
 
+/*----------------NOSOTROS----------------*/
 
+.nosotros {
+    margin: 1rem;
+
+    &__seccion {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        display: flex;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+
+        & img {
+            width: 50%;
+        }
+
+        &__historia {
+            margin: 2rem;
+
+            & h2 {
+                text-align: center;
+            }
+
+            & p {
+
+                text-align: justify;
+            }
+        }
+    }
+
+    &__equipo {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        margin: 2rem 0;
+
+        & p {
+            width: 70%;
+            margin: auto;
+            text-align: justify;
+        }
+
+        & div img {
+            width: 40%;
+        }
+
+        &__integrantes {
+            display: flex;
+            column-gap: 5rem;
+            justify-content: center;
+
+            &1,
+            &2 {
+                display: flex;
+                column-gap: 5rem;
+
+                & div div {
+                    width: 165px;
+                    height: 165px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+.jorgehover {
+    background-image: url(../assets/img/Nosotros/Jorge.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Jorge2.png);
+    }
+
+}
+
+.antoniahover {
+    background-image: url(../assets/img/Nosotros/Antonia.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Antonia2.png);
+    }
+}
+
+
+.patriciahover {
+    background-image: url(../assets/img/Nosotros/Patricia.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Patricia2.png);
+    }
+}
+
+.carloshover {
+    background-image: url(../assets/img/Nosotros/Carlos.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Carlos2.png);
+    }
+}
+
+/*----------------PELICULAS----------------*/
+
+.infomovie {
+    margin: 1rem;
+
+    & h2 {
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    & h3{
+        margin: 1rem 0;
+    }
+
+    & p {
+        margin: 1rem;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        text-align: justify;
+    }
+}
+
+.sectiontbl {
+    text-align: center;
+    margin: 1rem;
+
+    &__table {
+        margin: auto;
+        width: 80%;
+        border-collapse: inherit;
+
+        & tr {
+
+            & th {
+                background-color: #00679d;
+            }
+
+            & td {
+                background-color: #333333;
+                font-family: 'Kanit', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.trailer {
+    margin: 1rem 1rem 0 1rem;
+
+    & h3 {
+        margin: 1rem 0;
+    }
+    
+    & h4 {
+        margin: 2rem 0;
+    }
+
+    & div {
+        text-align: center;
+    }
+
+    & iframe {
+        margin-bottom: 2rem;
+        width: 40%;
+    }
+}
 
 
 /*----------------FOOTER----------------*/
