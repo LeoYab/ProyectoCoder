@@ -558,7 +558,7 @@ main {
         font-size: 2.5rem;
     }
 
-    & h3{
+    & h3 {
         margin: 1rem 0;
     }
 
@@ -600,7 +600,7 @@ main {
     & h3 {
         margin: 1rem 0;
     }
-    
+
     & h4 {
         margin: 2rem 0;
     }
@@ -671,4 +671,291 @@ a i {
     font-weight: 100;
     background-color: #042b40;
     padding: 1rem;
+}
+
+/*----------------MEDIA QUERYS-----------*/
+
+@media screen and (max-width: 1200px) {
+
+    /*----------------HEADER MEDIA-----------*/
+
+    .logo {
+        grid-area: logo;
+        margin-bottom: 0;
+    }
+
+    /*----------------NOSOTROS----------------*/
+    .nosotros {
+
+        .nosotros__seccion {
+            width: 100%;
+            align-items: center;
+        }
+
+        &__equipo__integrantes {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+/*----------------MEDIA 991----------------*/
+
+@media screen and (max-width: 991px) {
+
+    /*----------------HEADER----------------*/
+    .navbar {
+
+        &-nav li {
+            border-bottom: 1px solid white;
+        }
+
+        &-nav .lineout {
+            border-bottom: none;
+        }
+    }
+
+
+    .parallax__div {
+        display: none;
+    }
+
+    .btnvolver {
+        left: 90%;
+    }
+
+    .lognav {
+        display: block;
+    }
+
+    .btnlog {
+        display: none;
+    }
+
+    .contspan {
+        display: block;
+    }
+
+    .secciongridart__seccion2 {
+
+        display: grid;
+        grid-template-areas:
+            "seccion1"
+            "seccion2"
+            "seccion3"
+            "seccion4";
+        gap: 10px;
+    }
+
+    .seccion__article {
+
+        & .owl-nav {
+            display: none;
+        }
+
+        &__div a:hover span {
+            display: none;
+        }
+
+        &__div a:hover img {
+            transform: none;
+        }
+    }
+
+    .input-group {
+        margin: 1rem 0;
+    }
+}
+
+/*-----------------------MEDIA TABLET QUERY-------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    /*----------------HEADER MEDIA TABLET-----------*/
+
+    .logo {
+        grid-area: logo;
+        margin-bottom: 1rem;
+
+        & img {
+            display: block;
+            margin: auto;
+        }
+    }
+
+    /*----------------MAIN MEDIA TABLET-----------*/
+
+    .parallax__div {
+        display: none;
+    }
+
+    /*----------------PELICULA MEDIA TABLET-----------*/
+    .trailer iframe {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    /*----------------NOTICIAS MEDIA TABLET-----------*/
+
+    .secciongridart__seccion__div2-1 iframe {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    /*----------------NOTICIAS MEDIA TABLET-----------*/
+
+    .secciongridart__seccion2 {
+
+        display: grid;
+        grid-template-areas:
+            "seccion1"
+            "seccion2"
+            "seccion3"
+            "seccion4";
+        gap: 10px;
+    }
+
+    /*----------------FOOTER MEDIA TABLET----------------*/
+
+    .socialmedia {
+        & ul {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        &__li ul {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .contacto a .nosotros a {
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+/*-----------------------MEDIA CEL QUERY-------------------------*/
+
+@media screen and (max-width: 480px) {
+
+    /*----------------MAIN MEDIA CEL----------------*/
+
+    .parallax {
+        background-attachment: initial;
+        background-size: 150%;
+        height: 40vh;
+
+        &__div {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+
+            & a {
+                color: #ffffff;
+                background-color: #282828b6;
+            }
+        }
+    }
+
+    .seccion__article__div a:hover span {
+        display: none;
+    }
+
+    /*----------------PELICULAS MEDIA CEL----------------*/
+
+    .sectiontbl__table {
+        width: 100%;
+    }
+
+    /*----------------ARTISTAS MEDIA CEL----------------*/
+
+    .secciongridart {
+
+        & h2 {
+            display: block;
+            margin: auto;
+        }
+
+        &__seccion__div1,
+        &__seccion__div2 {
+            margin: 1rem;
+            border-style: solid;
+            border-color: #161a22;
+            border-radius: 20px;
+            background-color: #ffffff0a;
+
+            & h3 {
+                text-align: center;
+                margin: 0 1rem;
+            }
+        }
+
+
+        &__seccion__div__imp1,
+        &__seccion__div__imp2 {
+            display: flex;
+            flex-direction: column;
+
+            & img {
+                margin: auto;
+            }
+        }
+    }
+
+    /*------------NOTICIAS SEMANALES MEDIA CEL----------*/
+
+    .parallax__div2 {
+
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 30px;
+
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+
+    /*----------------NOSOTROS MEDIA CEL----------------*/
+
+    .nosotros__seccion {
+        flex-direction: column;
+
+        & img {
+            width: 80%;
+        }
+    }
+
+    .nosotros__equipo__integrantes {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+
+        &1,
+        &2 {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+        }
+    }
+
+    /*----------------FOOTER MEDIA CEL----------------*/
+
+    .socialmedia {
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__li ul {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
 }
