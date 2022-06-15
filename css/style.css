@@ -290,8 +290,7 @@ main {
 
 .secciongridart__seccion2 {
   display: grid;
-  grid-template-areas: "seccion1 seccion1 seccion4"
- "seccion2 seccion3 seccion4";
+  grid-template-areas: "seccion1 seccion1 seccion4" "seccion2 seccion3 seccion4";
   gap: 10px; }
 
 .parallax__div2 {
@@ -493,10 +492,7 @@ a i {
     display: block; }
   .secciongridart__seccion2 {
     display: grid;
-    grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4";
+    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
     gap: 10px; }
   .seccion__article .owl-nav {
     display: none; }
@@ -531,10 +527,7 @@ a i {
   /*----------------NOTICIAS MEDIA TABLET-----------*/
   .secciongridart__seccion2 {
     display: grid;
-    grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4";
+    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
     gap: 10px; }
   /*----------------FOOTER MEDIA TABLET----------------*/
   .socialmedia ul {
