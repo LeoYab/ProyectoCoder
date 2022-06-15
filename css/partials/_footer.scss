@@ -1,0 +1,56 @@
+/*----------------FOOTER----------------*/
+
+footer {
+    background-color: $azulhf;
+    margin-top: 1rem;
+}
+
+.socialmedia {
+    margin: 0.8rem;
+    text-align: center;
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+        & li {
+            margin: 0 0.8em;
+            display: inline-block;
+            justify-items: center;
+        }
+    }
+
+    &__li ul li {
+        transition: 0.2s;
+    }
+}
+
+.facebook,
+.instagram,
+.twitter,
+a i {
+    font-size: 20px;
+    color: #ffffff;
+
+    &:hover {
+        color: $colorbtnin;
+        transform: scale(1.1);
+        transition: ease-in-out .1s;
+    }
+}
+
+.contacto a,
+.nosotros a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 100;
+    background-color: #042b40;
+    padding: 1rem;
+}

@@ -1,0 +1,102 @@
+/*----------------HEADER----------------*/
+
+header {
+    background-color: $azulhf;
+}
+
+h2,
+h3 {
+    font-weight: 600;
+    margin: 2rem;
+}
+
+//.navbar-expand-lg {
+//    width: 100%;
+//}
+
+.contspan {
+    display: none;
+    width: 54px;
+}
+
+.logo {
+    margin: 1rem;
+}
+
+.lognav {
+    display: none;
+}
+
+//login PC
+.btnlogin {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5rem;
+
+    &__title h6 {
+        margin-top: .5rem;
+        font-weight: 800;
+    }
+
+}
+
+.nav-item a {
+    color: aliceblue;
+    margin: 0.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: $colorbtnin;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0098e9;
+    --bs-btn-hover-border-color: #0098e9;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #00679d;
+    --bs-btn-active-border-color: #00679d;
+    --bs-btn-disabled-color: #00679d;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #ffffff;
+}
+
+#logo {
+    margin-right: 0;
+}
+
+.btn-primary {
+    background-color: #0f5e89;
+    border-color: #ffffff;
+
+    &:hover {
+        background-color: $colorbtnin;
+        border-color: none;
+        --bs-btn-hover-border-color: none;
+    }
+}
+
+.btn {
+    --bs-btn-focus-box-shadow: none;
+}
