@@ -1,0 +1,80 @@
+/*----------------ACTORES----------------*/
+
+.secciongridart {
+
+    & h2 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &__seccion {
+        display: grid;
+        align-items: center;
+        grid-row-gap: 10px;
+        width: 80%;
+        margin: auto;
+
+
+        &__div1 h3 {
+            margin: 0 0 0 1rem;
+        }
+
+        &__div1,
+        &__div2 {
+            margin: 1rem;
+            border-style: solid;
+            border-radius: 20px;
+            background-color: #ffffff0a;
+        }
+
+        &__div1 {
+            border-color: $bgmain $bgmain $bgmain white;
+        }
+
+        &__div2 {
+            border-color: $bgmain white $bgmain $bgmain;
+
+            & h3 {
+                text-align: right;
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        &__div1 p,
+        &__div2 p,
+        &__div2-1 p,
+        &__div2-2 p,
+        &__div2-3 p,
+        &__div2-4 p {
+            font-family: $fontkanit;
+            font-weight: 200;
+        }
+
+        &__div__imp1 {
+            align-items: center;
+            display: flex;
+            text-align: justify;
+            margin: 0 1rem 1rem 1rem;
+
+            & img {
+                margin: 1rem 1rem 1rem 0;
+                border-radius: 50%;
+                border: solid 2px white;
+            }
+        }
+
+        &__div__imp2 {
+            align-items: center;
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: justify;
+            margin: 0 1rem 1rem 1rem;
+
+            & img {
+                margin: 1rem 0 1rem 1rem;
+                border-radius: 50%;
+                border: solid 2px white;
+            }
+        }
+    }
+}

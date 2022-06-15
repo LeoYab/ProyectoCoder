@@ -1,4 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap");
+/*----------------NOTICIAS SEMANALES----------------*/
+.secciongridart__seccion2 {
+  display: grid;
+  grid-template-areas: "seccion1 seccion1 seccion4" "seccion2 seccion3 seccion4";
+  gap: 10px; }
+
+.secciongridart__seccion__div2-1, .secciongridart__seccion__div2-2, .secciongridart__seccion__div2-3, .secciongridart__seccion__div2-4 {
+  text-align: justify;
+  margin: 1em;
+  background-color: #ffffff0a;
+  border-radius: 20px;
+  padding: 1rem; }
+  .secciongridart__seccion__div2-1 img, .secciongridart__seccion__div2-2 img, .secciongridart__seccion__div2-3 img, .secciongridart__seccion__div2-4 img {
+    display: block;
+    margin: auto;
+    width: 100%; }
+  .secciongridart__seccion__div2-1 h3, .secciongridart__seccion__div2-2 h3, .secciongridart__seccion__div2-3 h3, .secciongridart__seccion__div2-4 h3 {
+    text-align: center;
+    margin-bottom: 1rem; }
+
+.secciongridart__seccion__div2-1 {
+  grid-area: seccion1; }
+  .secciongridart__seccion__div2-1 iframe {
+    display: block;
+    margin: auto;
+    width: 60%; }
+
+.secciongridart__seccion__div2-2 {
+  grid-area: seccion2; }
+
+.secciongridart__seccion__div2-3 {
+  grid-area: seccion3; }
+
+.secciongridart__seccion__div2-4 {
+  grid-area: seccion4; }
+
+.secciongridart .parallax__div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #053650;
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  height: 65vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 50px 30px; }
+  .secciongridart .parallax__div2 h3 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    border: solid 2px white;
+    border-radius: 10px; }
+
+/*----------------ACTORES----------------*/
+.secciongridart h2 {
+  text-align: center;
+  margin: 1rem; }
+
+.secciongridart__seccion {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 10px;
+  width: 80%;
+  margin: auto; }
+  .secciongridart__seccion__div1 h3 {
+    margin: 0 0 0 1rem; }
+  .secciongridart__seccion__div1, .secciongridart__seccion__div2 {
+    margin: 1rem;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: #ffffff0a; }
+  .secciongridart__seccion__div1 {
+    border-color: #161a22 #161a22 #161a22 white; }
+  .secciongridart__seccion__div2 {
+    border-color: #161a22 white #161a22 #161a22; }
+    .secciongridart__seccion__div2 h3 {
+      text-align: right;
+      margin: 0 1rem 0 0; }
+  .secciongridart__seccion__div1 p,
+  .secciongridart__seccion__div2 p,
+  .secciongridart__seccion__div2-1 p,
+  .secciongridart__seccion__div2-2 p,
+  .secciongridart__seccion__div2-3 p,
+  .secciongridart__seccion__div2-4 p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200; }
+  .secciongridart__seccion__div__imp1 {
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    margin: 0 1rem 1rem 1rem; }
+    .secciongridart__seccion__div__imp1 img {
+      margin: 1rem 1rem 1rem 0;
+      border-radius: 50%;
+      border: solid 2px white; }
+  .secciongridart__seccion__div__imp2 {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+    margin: 0 1rem 1rem 1rem; }
+    .secciongridart__seccion__div__imp2 img {
+      margin: 1rem 0 1rem 1rem;
+      border-radius: 50%;
+      border: solid 2px white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -209,109 +316,6 @@ main {
   margin-bottom: 2rem;
   text-align: center; }
 
-/*----------------ACTORES----------------*/
-.secciongridart h2 {
-  text-align: center;
-  margin: 1rem; }
-
-.secciongridart__seccion {
-  display: grid;
-  align-items: center;
-  grid-row-gap: 10px;
-  width: 80%;
-  margin: auto;
-  /*----------------NOTICIAS SEMANALES----------------*/ }
-  .secciongridart__seccion__div1 h3 {
-    margin: 0 0 0 1rem; }
-  .secciongridart__seccion__div1, .secciongridart__seccion__div2 {
-    margin: 1rem;
-    border-style: solid;
-    border-radius: 20px;
-    background-color: #ffffff0a; }
-  .secciongridart__seccion__div1 {
-    border-color: #161a22 #161a22 #161a22 white; }
-  .secciongridart__seccion__div2 {
-    border-color: #161a22 white #161a22 #161a22; }
-    .secciongridart__seccion__div2 h3 {
-      text-align: right;
-      margin: 0 1rem 0 0; }
-  .secciongridart__seccion__div1 p,
-  .secciongridart__seccion__div2 p,
-  .secciongridart__seccion__div2-1 p,
-  .secciongridart__seccion__div2-2 p,
-  .secciongridart__seccion__div2-3 p,
-  .secciongridart__seccion__div2-4 p {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200; }
-  .secciongridart__seccion__div__imp1 {
-    align-items: center;
-    display: flex;
-    text-align: justify;
-    margin: 0 1rem 1rem 1rem; }
-    .secciongridart__seccion__div__imp1 img {
-      margin: 1rem 1rem 1rem 0;
-      border-radius: 50%;
-      border: solid 2px white; }
-  .secciongridart__seccion__div__imp2 {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: justify;
-    margin: 0 1rem 1rem 1rem; }
-    .secciongridart__seccion__div__imp2 img {
-      margin: 1rem 0 1rem 1rem;
-      border-radius: 50%;
-      border: solid 2px white; }
-  .secciongridart__seccion__div2-1, .secciongridart__seccion__div2-2, .secciongridart__seccion__div2-3, .secciongridart__seccion__div2-4 {
-    text-align: justify;
-    margin: 1em;
-    background-color: #ffffff0a;
-    border-radius: 20px;
-    padding: 1rem; }
-    .secciongridart__seccion__div2-1 img, .secciongridart__seccion__div2-2 img, .secciongridart__seccion__div2-3 img, .secciongridart__seccion__div2-4 img {
-      display: block;
-      margin: auto;
-      width: 100%; }
-    .secciongridart__seccion__div2-1 h3, .secciongridart__seccion__div2-2 h3, .secciongridart__seccion__div2-3 h3, .secciongridart__seccion__div2-4 h3 {
-      text-align: center;
-      margin-bottom: 1rem; }
-  .secciongridart__seccion__div2-1 {
-    grid-area: seccion1; }
-    .secciongridart__seccion__div2-1 iframe {
-      display: block;
-      margin: auto;
-      width: 60%; }
-  .secciongridart__seccion__div2-2 {
-    grid-area: seccion2; }
-  .secciongridart__seccion__div2-3 {
-    grid-area: seccion3; }
-  .secciongridart__seccion__div2-4 {
-    grid-area: seccion4; }
-
-.secciongridart__seccion2 {
-  display: grid;
-  grid-template-areas: "seccion1 seccion1 seccion4"
- "seccion2 seccion3 seccion4";
-  gap: 10px; }
-
-.parallax__div2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #053650;
-  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
-  height: 65vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-  padding: 50px 30px; }
-  .parallax__div2 h3 {
-    text-align: center;
-    padding: 1rem;
-    font-size: 2rem;
-    border: solid 2px white;
-    border-radius: 10px; }
-
 /*----------------NOSOTROS----------------*/
 .nosotros {
   margin: 1rem; }
@@ -493,10 +497,7 @@ a i {
     display: block; }
   .secciongridart__seccion2 {
     display: grid;
-    grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4";
+    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
     gap: 10px; }
   .seccion__article .owl-nav {
     display: none; }
@@ -531,10 +532,7 @@ a i {
   /*----------------NOTICIAS MEDIA TABLET-----------*/
   .secciongridart__seccion2 {
     display: grid;
-    grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4";
+    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
     gap: 10px; }
   /*----------------FOOTER MEDIA TABLET----------------*/
   .socialmedia ul {
