@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: aliceblue;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #161a22; }
+
 /*----------------NOTICIAS SEMANALES----------------*/
 .secciongridart__seccion2 {
   display: grid;
@@ -347,50 +364,52 @@ a i {
     margin-bottom: 2rem;
     width: 40%; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth; }
-
-body {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: aliceblue;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  background-color: #161a22; }
-
 /*----------------MAIN----------------*/
 main {
   background-color: #161a22;
   overflow: hidden; }
 
-.parallax {
-  background-image: url(../assets/img/Trend/Slider.png);
+.parallaxpeliculas {
+  background-image: url(../assets/img/Trend/parallaxpeliculas.png);
   height: 65vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 30px; }
-  .parallax__div {
-    position: absolute;
-    top: 50%;
-    left: 46%; }
-    .parallax__div a {
-      transition: .2s;
-      color: #ffffffe7;
-      text-decoration: none;
-      padding: 10px;
-      border: 0.2rem;
-      border-style: solid;
-      border-radius: 0.2rem; }
-    .parallax__div a:hover {
-      background-color: #0097e938; }
+
+.parallaxseries {
+  background-image: url(../assets/img/Trend/parallaxseries.png);
+  height: 65vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px; }
+
+.parallaxestrenos {
+  background-image: url(../assets/img/Trend/parallaxestrenos.png);
+  height: 65vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px; }
+
+.parallax__div {
+  position: absolute;
+  top: 50%;
+  left: 46%; }
+  .parallax__div a {
+    transition: .2s;
+    color: #ffffffe7;
+    text-decoration: none;
+    padding: 10px;
+    border: 0.2rem;
+    border-style: solid;
+    border-radius: 0.2rem; }
+  .parallax__div a:hover {
+    background-color: #0097e938; }
 
 .btnvolver {
   background-image: url(../assets/img/btnup.png);
@@ -485,6 +504,15 @@ main {
     border-bottom: 1px solid white; }
   .navbar-nav .lineout {
     border-bottom: none; }
+  .parallaxpeliculas {
+    height: 45vh;
+    background-attachment: inherit; }
+  .parallaxseries {
+    height: 45vh;
+    background-attachment: inherit; }
+  .parallaxestrenos {
+    height: 45vh;
+    background-attachment: inherit; }
   .parallax__div {
     display: none; }
   .btnvolver {
@@ -548,17 +576,22 @@ main {
 /*-----------------------MEDIA CEL QUERY-------------------------*/
 @media screen and (max-width: 480px) {
   /*----------------MAIN MEDIA CEL----------------*/
-  .parallax {
-    background-attachment: initial;
-    background-size: 150%;
-    height: 40vh; }
-    .parallax__div {
-      position: absolute;
-      top: 40%;
-      left: 30%; }
-      .parallax__div a {
-        color: #ffffff;
-        background-color: #282828b6; }
+  .parallaxpeliculas {
+    height: 30vh;
+    background-attachment: inherit; }
+  .parallaxseries {
+    height: 30vh;
+    background-attachment: inherit; }
+  .parallaxestrenos {
+    height: 30vh;
+    background-attachment: inherit; }
+  .parallax__div {
+    position: absolute;
+    top: 40%;
+    left: 30%; }
+    .parallax__div a {
+      color: #ffffff;
+      background-color: #282828b6; }
   .seccion__article__div a:hover span {
     display: none; }
   /*----------------PELICULAS MEDIA CEL----------------*/

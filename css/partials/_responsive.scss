@@ -40,9 +40,26 @@
         }
     }
 
+    .parallax {
 
-    .parallax__div {
-        display: none;
+        &peliculas {
+            height: 45vh;
+            background-attachment: inherit;
+        }
+
+        &series {
+            height: 45vh;
+            background-attachment: inherit;
+        }
+
+        &estrenos {
+            height: 45vh;
+            background-attachment: inherit;
+        }
+
+        &__div {
+            display: none;
+        }
     }
 
     .btnvolver {
@@ -90,7 +107,10 @@
     .input-group {
         margin: 1rem 0;
     }
+
 }
+
+
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
 
@@ -166,11 +186,22 @@
 @media screen and (max-width: 480px) {
 
     /*----------------MAIN MEDIA CEL----------------*/
-
     .parallax {
-        background-attachment: initial;
-        background-size: 150%;
-        height: 40vh;
+
+        &peliculas {
+            height: 30vh;
+            background-attachment: inherit;
+        }
+
+        &series {
+            height: 30vh;
+            background-attachment: inherit;
+        }
+
+        &estrenos {
+            height: 30vh;
+            background-attachment: inherit;
+        }
 
         &__div {
             position: absolute;
