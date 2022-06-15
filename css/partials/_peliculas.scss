@@ -1,0 +1,67 @@
+/*----------------PELICULAS----------------*/
+
+.infomovie {
+    margin: 1rem;
+
+    & h2 {
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    & h3 {
+        margin: 1rem 0;
+    }
+
+    & p {
+        margin: 1rem;
+        font-family: $fontkanit;
+        font-weight: 400;
+        text-align: justify;
+    }
+}
+
+.sectiontbl {
+    text-align: center;
+    margin: 1rem;
+
+    &__table {
+        margin: auto;
+        width: 80%;
+        border-collapse: inherit;
+
+        & tr {
+
+            & th {
+                background-color: #00679d;
+            }
+
+            & td {
+                background-color: #333333;
+                font-family: $fontkanit;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.trailer {
+    margin: 1rem 1rem 0 1rem;
+
+    & h3 {
+        margin: 1rem 0;
+    }
+
+    & h4 {
+        margin: 2rem 0;
+    }
+
+    & div {
+        text-align: center;
+    }
+
+    & iframe {
+        margin-bottom: 2rem;
+        width: 40%;
+    }
+}

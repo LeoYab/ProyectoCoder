@@ -1,0 +1,100 @@
+/*----------------NOSOTROS----------------*/
+
+.nosotros {
+    margin: 1rem;
+
+    &__seccion {
+        font-family: $fontkanit;
+        font-weight: 400;
+        display: flex;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+
+        & img {
+            width: 50%;
+        }
+
+        &__historia {
+            margin: 2rem;
+
+            & h2 {
+                text-align: center;
+            }
+
+            & p {
+
+                text-align: justify;
+            }
+        }
+    }
+
+    &__equipo {
+        font-family: $fontkanit;
+        font-weight: 400;
+        text-align: center;
+        margin: 2rem 0;
+
+        & p {
+            width: 70%;
+            margin: auto;
+            text-align: justify;
+        }
+
+        & div img {
+            width: 40%;
+        }
+
+        &__integrantes {
+            display: flex;
+            column-gap: 5rem;
+            justify-content: center;
+
+            &1,
+            &2 {
+                display: flex;
+                column-gap: 5rem;
+
+                & div div {
+                    width: 165px;
+                    height: 165px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+.jorgehover {
+    background-image: url(../assets/img/Nosotros/Jorge.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Jorge2.png);
+    }
+
+}
+
+.antoniahover {
+    background-image: url(../assets/img/Nosotros/Antonia.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Antonia2.png);
+    }
+}
+
+
+.patriciahover {
+    background-image: url(../assets/img/Nosotros/Patricia.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Patricia2.png);
+    }
+}
+
+.carloshover {
+    background-image: url(../assets/img/Nosotros/Carlos.png);
+
+    &:hover {
+        background-image: url(../assets/img/Nosotros/Carlos2.png);
+    }
+}

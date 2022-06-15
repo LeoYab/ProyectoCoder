@@ -1,0 +1,25 @@
+/*-----------------------CAROUSEL-------------------------*/
+
+.seccion__article .owl-nav {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.owl-nav button span {
+    background: #41464b54;
+    border-radius: 10px;
+    color: inherit;
+    border: none;
+    padding: 0 50px;
+    font: inherit;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+
+.owl-nav button span:hover {
+    background: #f8fafd54;
+    border-radius: 10px;
+}
+
