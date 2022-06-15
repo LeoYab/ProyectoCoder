@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap');
+@import "../css/partials/variables";
 
 * {
     margin: 0;
@@ -11,19 +12,19 @@ html {
 }
 
 body {
-    font-family: 'Kanit', sans-serif;
+    font-family: $fontkanit;
     font-weight: 600;
     font-size: 1.4rem;
     color: aliceblue;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: #161a22;
+    background-color: $bgmain;
 }
 
 /*----------------HEADER----------------*/
 
 header {
-    background-color: #053650;
+    background-color: $azulhf;
 }
 
 h2,
@@ -70,7 +71,7 @@ h3 {
     transition: color 0.2s;
 
     &:hover {
-        color: #0098e9;
+        color: $colorbtnin;
     }
 }
 
@@ -113,7 +114,7 @@ h3 {
     border-color: #ffffff;
 
     &:hover {
-        background-color: #0098e9;
+        background-color: $colorbtnin;
         border-color: none;
         --bs-btn-hover-border-color: none;
     }
@@ -126,7 +127,7 @@ h3 {
 /*----------------MAIN----------------*/
 
 main {
-    background-color: #161a22;
+    background-color: $bgmain;
     overflow: hidden;
 }
 
@@ -227,7 +228,7 @@ main {
             }
 
             & h3 {
-                font-family: 'Kanit', sans-serif;
+                font-family: $fontkanit;
                 font-size: 1rem;
             }
         }
@@ -278,7 +279,7 @@ main {
     }
 
     & p {
-        font-family: 'Kanit', sans-serif;
+        font-family: $fontkanit;
         font-weight: 400;
         margin-bottom: 2rem;
         text-align: center;
@@ -317,11 +318,11 @@ main {
         }
 
         &__div1 {
-            border-color: #161a22 #161a22 #161a22 white;
+            border-color: $bgmain $bgmain $bgmain white;
         }
 
         &__div2 {
-            border-color: #161a22 white #161a22 #161a22;
+            border-color: $bgmain white $bgmain $bgmain;
 
             & h3 {
                 text-align: right;
@@ -335,7 +336,7 @@ main {
         &__div2-2 p,
         &__div2-3 p,
         &__div2-4 p {
-            font-family: 'Kanit', sans-serif;
+            font-family: $fontkanit;
             font-weight: 200;
         }
 
@@ -428,7 +429,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #053650;
+    background-color: $azulhf;
     background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
     height: 65vh;
     background-attachment: fixed;
@@ -452,7 +453,7 @@ main {
     margin: 1rem;
 
     &__seccion {
-        font-family: 'Kanit', sans-serif;
+        font-family: $fontkanit;
         font-weight: 400;
         display: flex;
         width: 70%;
@@ -478,7 +479,7 @@ main {
     }
 
     &__equipo {
-        font-family: 'Kanit', sans-serif;
+        font-family: $fontkanit;
         font-weight: 400;
         text-align: center;
         margin: 2rem 0;
@@ -564,7 +565,7 @@ main {
 
     & p {
         margin: 1rem;
-        font-family: 'Kanit', sans-serif;
+        font-family: $fontkanit;
         font-weight: 400;
         text-align: justify;
     }
@@ -587,7 +588,7 @@ main {
 
             & td {
                 background-color: #333333;
-                font-family: 'Kanit', sans-serif;
+                font-family: $fontkanit;
                 font-weight: 400;
             }
         }
@@ -619,7 +620,7 @@ main {
 /*----------------FOOTER----------------*/
 
 footer {
-    background-color: #053650;
+    background-color: $azulhf;
     margin-top: 1rem;
 }
 
@@ -653,7 +654,7 @@ a i {
     color: #ffffff;
 
     &:hover {
-        color: #0098e9;
+        color: $colorbtnin;
         transform: scale(1.1);
         transition: ease-in-out .1s;
     }
@@ -882,7 +883,7 @@ a i {
         &__seccion__div2 {
             margin: 1rem;
             border-style: solid;
-            border-color: #161a22;
+            border-color: $bgmain;
             border-radius: 20px;
             background-color: #ffffff0a;
 

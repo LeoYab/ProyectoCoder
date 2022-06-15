@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: aliceblue;
@@ -168,7 +168,7 @@ main {
         border-radius: 0.2rem;
         border-width: 2px; }
       .seccion__article__div h3 {
-        font-family: 'Kanit', sans-serif;
+        font-family: "Kanit", sans-serif;
         font-size: 1rem; }
 
 /*-----------------------CAROUSEL-------------------------*/
@@ -204,7 +204,7 @@ main {
   font-size: 2rem; }
 
 .maincontact__iframe p {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 400;
   margin-bottom: 2rem;
   text-align: center; }
@@ -241,7 +241,7 @@ main {
   .secciongridart__seccion__div2-2 p,
   .secciongridart__seccion__div2-3 p,
   .secciongridart__seccion__div2-4 p {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 200; }
   .secciongridart__seccion__div__imp1 {
     align-items: center;
@@ -315,7 +315,7 @@ main {
 .nosotros {
   margin: 1rem; }
   .nosotros__seccion {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     display: flex;
     width: 70%;
@@ -330,7 +330,7 @@ main {
       .nosotros__seccion__historia p {
         text-align: justify; }
   .nosotros__equipo {
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     text-align: center;
     margin: 2rem 0; }
@@ -383,7 +383,7 @@ main {
     margin: 1rem 0; }
   .infomovie p {
     margin: 1rem;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     text-align: justify; }
 
@@ -398,7 +398,7 @@ main {
       background-color: #00679d; }
     .sectiontbl__table tr td {
       background-color: #333333;
-      font-family: 'Kanit', sans-serif;
+      font-family: "Kanit", sans-serif;
       font-weight: 400; }
 
 .trailer {
