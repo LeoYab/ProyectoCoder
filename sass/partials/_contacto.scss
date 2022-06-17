@@ -5,21 +5,20 @@
     & iframe {
         height: 550px;
         width: 94%;
-        margin: 1rem;
+        margin: map-get($generic , margin );
         border-radius: 10px;
     }
 
     & h2 {
-        text-align: center;
+        text-align: map-get($generic , text-align );
         margin-bottom: 1.5rem;
         font-size: 2rem;
     }
 
     & p {
-        font-family: $fontkanit;
-        font-weight: 400;
+        @include font400;
         margin-bottom: 2rem;
-        text-align: center;
+        text-align: map-get($generic , text-align );
 
     }
 }

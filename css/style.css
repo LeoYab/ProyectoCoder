@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap");
 * {
   margin: 0;
@@ -18,7 +19,15 @@ body {
 
 /*----------------HEADER----------------*/
 header {
+  position: relative;
   background-color: #053650; }
+
+.dpelicula {
+  position: absolute;
+  left: 33px;
+  bottom: 30px;
+  font-size: 1rem;
+  font-weight: 600; }
 
 h2,
 h3 {
@@ -96,47 +105,35 @@ main {
   background-color: #161a22;
   overflow: hidden; }
 
-.parallaxpeliculas {
-  background-image: url(../assets/img/Trend/parallaxpeliculas.png);
+.parallax, .parallaxpeliculas, .parallaxseries, .parallaxestrenos, .parallaxdrstrg {
   height: 65vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 30px; }
-
-.parallaxseries {
-  background-image: url(../assets/img/Trend/parallaxseries.png);
-  height: 65vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 30px; }
-
-.parallaxestrenos {
-  background-image: url(../assets/img/Trend/parallaxestrenos.png);
-  height: 65vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px 30px; }
-
-.parallax__div {
-  position: absolute;
-  top: 50%;
-  left: 46%; }
-  .parallax__div a {
-    transition: .2s;
-    color: #ffffffe7;
-    text-decoration: none;
-    padding: 10px;
-    border: 0.2rem;
-    border-style: solid;
-    border-radius: 0.2rem; }
-  .parallax__div a:hover {
-    background-color: #0097e938; }
+  .parallaxpeliculas {
+    background-image: url(../assets/img/Trend/parallaxpeliculas.png); }
+  .parallaxseries {
+    background-image: url(../assets/img/Trend/parallaxseries.png); }
+  .parallaxestrenos {
+    background-image: url(../assets/img/Trend/parallaxestrenos.png); }
+  .parallaxdrstrg {
+    background-image: url(../assets/img/Trend/parallaxdrstrg.png); }
+  .parallax__div {
+    position: absolute;
+    top: 50%;
+    left: 46%; }
+    .parallax__div a {
+      transition: .2s;
+      color: #ffffffe7;
+      text-decoration: none;
+      padding: 10px;
+      border: 0.2rem;
+      border-style: solid;
+      border-radius: 0.2rem; }
+    .parallax__div a:hover {
+      background-color: #0097e938; }
 
 .btnvolver {
   background-image: url(../assets/img/btnup.png);
@@ -180,7 +177,7 @@ main {
       .seccion__article__div--spanhover {
         display: none;
         position: absolute;
-        left: 25%;
+        left: 35%;
         bottom: 55%;
         padding: 0 1rem;
         border-style: solid;
@@ -197,7 +194,7 @@ main {
   gap: 10px; }
 
 .secciongridart__seccion__div2-1, .secciongridart__seccion__div2-2, .secciongridart__seccion__div2-3, .secciongridart__seccion__div2-4 {
-  text-align: justify;
+  text-align: center;
   margin: 1em;
   background-color: #ffffff0a;
   border-radius: 20px;
@@ -269,12 +266,20 @@ main {
     .secciongridart__seccion__div2 h3 {
       text-align: right;
       margin: 0 1rem 0 0; }
-  .secciongridart__seccion__div1 p,
-  .secciongridart__seccion__div2 p,
-  .secciongridart__seccion__div2-1 p,
-  .secciongridart__seccion__div2-2 p,
-  .secciongridart__seccion__div2-3 p,
+  .secciongridart__seccion__div2-1 p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200; }
+  .secciongridart__seccion__div2-2 p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200; }
+  .secciongridart__seccion__div2-3 p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200; }
   .secciongridart__seccion__div2-4 p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200; }
+  .secciongridart__seccion__div1 p,
+  .secciongridart__seccion__div2 p {
     font-family: "Kanit", sans-serif;
     font-weight: 200; }
   .secciongridart__seccion__div__imp1 {
@@ -386,9 +391,9 @@ main {
   .infomovie h3 {
     margin: 1rem 0; }
   .infomovie p {
-    margin: 1rem;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
+    margin: 1rem;
     text-align: justify; }
 
 .sectiontbl {
@@ -401,9 +406,9 @@ main {
     .sectiontbl__table tr th {
       background-color: #00679d; }
     .sectiontbl__table tr td {
-      background-color: #333333;
       font-family: "Kanit", sans-serif;
-      font-weight: 400; }
+      font-weight: 400;
+      background-color: #333333; }
 
 .trailer {
   margin: 1rem 1rem 0 1rem; }
@@ -504,6 +509,15 @@ a i {
     border-bottom: 1px solid white; }
   .navbar-nav .lineout {
     border-bottom: none; }
+  .dpelicula {
+    display: none; }
+  #logo {
+    background-image: url(/assets/img/logo_página.png);
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 112px; }
+  #logo img {
+    display: none; }
   .parallaxpeliculas {
     height: 45vh;
     background-attachment: inherit; }

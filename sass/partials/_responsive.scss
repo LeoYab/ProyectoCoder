@@ -40,6 +40,19 @@
         }
     }
 
+    .dpelicula{
+        display:none;
+    }
+    #logo{
+        background-image: url(/assets/img/logo_página.png);
+        background-repeat: no-repeat;
+        width: 112px;
+        height: 112px;
+    }
+
+    #logo img {
+        display: none;
+    }
     .parallax {
 
         &peliculas {
@@ -177,7 +190,7 @@
 
     .contacto a .nosotros a {
         padding: 0 10px;
-        text-align: center;
+        text-align: map-get($generic , text-align );
     }
 }
 
@@ -236,14 +249,14 @@
 
         &__seccion__div1,
         &__seccion__div2 {
-            margin: 1rem;
+            margin: map-get($generic , margin );
             border-style: solid;
             border-color: $bgmain;
             border-radius: 20px;
             background-color: #ffffff0a;
 
             & h3 {
-                text-align: center;
+                text-align: map-get($generic , text-align );
                 margin: 0 1rem;
             }
         }
@@ -263,7 +276,6 @@
     /*------------NOTICIAS SEMANALES MEDIA CEL----------*/
 
     .parallax__div2 {
-
         height: 30vh;
         background-attachment: fixed;
         background-position: center;

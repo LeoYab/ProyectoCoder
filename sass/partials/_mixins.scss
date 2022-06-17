@@ -1,0 +1,10 @@
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font400 {
+    font-family: $fontkanit;
+    font-weight: 400;
+}

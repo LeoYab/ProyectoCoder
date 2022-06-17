@@ -1,11 +1,10 @@
 /*----------------NOSOTROS----------------*/
 
 .nosotros {
-    margin: 1rem;
+    margin: map-get($generic , margin );
 
     &__seccion {
-        font-family: $fontkanit;
-        font-weight: 400;
+        @include font400;
         display: flex;
         width: 70%;
         margin: auto;
@@ -19,7 +18,7 @@
             margin: 2rem;
 
             & h2 {
-                text-align: center;
+                text-align: map-get($generic , text-align );
             }
 
             & p {
@@ -30,9 +29,8 @@
     }
 
     &__equipo {
-        font-family: $fontkanit;
-        font-weight: 400;
-        text-align: center;
+        @include font400;
+        text-align: map-get($generic , text-align );
         margin: 2rem 0;
 
         & p {
@@ -65,36 +63,27 @@
     }
 }
 
-.jorgehover {
-    background-image: url(../assets/img/Nosotros/Jorge.png);
+$integrantes: ( 
 
-    &:hover {
-        background-image: url(../assets/img/Nosotros/Jorge2.png);
+    "jorge":    Jorge,
+    "antonia":  Antonia,
+    "patricia": Patricia,
+    "carlos":   Carlos
+);
+
+@each $nombre, $imagen in $integrantes{
+
+    .#{$nombre}hover{
+
+        background-image: url(../assets/img/Nosotros/#{$imagen}.png);
+
+        &:hover {
+            background-image: url(../assets/img/Nosotros/#{$imagen}2.png);
+        }
     }
 
 }
 
-.antoniahover {
-    background-image: url(../assets/img/Nosotros/Antonia.png);
-
-    &:hover {
-        background-image: url(../assets/img/Nosotros/Antonia2.png);
-    }
-}
 
 
-.patriciahover {
-    background-image: url(../assets/img/Nosotros/Patricia.png);
 
-    &:hover {
-        background-image: url(../assets/img/Nosotros/Patricia2.png);
-    }
-}
-
-.carloshover {
-    background-image: url(../assets/img/Nosotros/Carlos.png);
-
-    &:hover {
-        background-image: url(../assets/img/Nosotros/Carlos2.png);
-    }
-}

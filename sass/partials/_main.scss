@@ -6,19 +6,19 @@ main {
 }
 
 
-
-
 .parallax {
 
-    @each $imgparallax in peliculas, series, estrenos {
+    height: 65vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 30px;
+
+    @each $imgparallax in peliculas, series, estrenos, drstrg {
         &#{$imgparallax} {
             background-image: url(../assets/img/Trend/parallax#{$imgparallax}.png);
-            height: 65vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 50px 30px;
+            @extend .parallax;
         }
     }
 
@@ -65,7 +65,7 @@ main {
 }
 
 .seccion {
-    text-align: center;
+    text-align: map-get($generic , text-align );
 
     & h2 {
         margin: 2rem 0;
@@ -99,9 +99,9 @@ main {
             }
 
             &--spanhover {
-                display: none;
+                display: none;            
                 position: absolute;
-                left: 25%;
+                left: 35%;
                 bottom: 55%;
                 padding: 0 1rem;
                 border-style: solid;

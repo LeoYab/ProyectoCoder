@@ -14,9 +14,8 @@
     }
 
     & p {
+        @include font400;
         margin: 1rem;
-        font-family: $fontkanit;
-        font-weight: 400;
         text-align: justify;
     }
 }
@@ -37,9 +36,8 @@
             }
 
             & td {
+                @include font400;
                 background-color: #333333;
-                font-family: $fontkanit;
-                font-weight: 400;
             }
         }
     }

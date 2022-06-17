@@ -40,15 +40,20 @@
             }
         }
 
+        @for $i from 1 through 4 {
+
+            &__div2-#{$i} p {
+                font-family: $fontkanit;
+                font-weight: 200;
+            }
+        }
+        
         &__div1 p,
-        &__div2 p,
-        &__div2-1 p,
-        &__div2-2 p,
-        &__div2-3 p,
-        &__div2-4 p {
+        &__div2 p {
             font-family: $fontkanit;
             font-weight: 200;
         }
+
 
         &__div__imp1 {
             align-items: center;

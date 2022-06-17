@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap');
-@import "../css/partials/configini";
-@import "../css/partials/variables";
-@import "../css/partials/header";
-@import "../css/partials/main";
-@import "../css/partials/noticias";
-@import "../css/partials/actores";
-@import "../css/partials/contacto";
-@import "../css/partials/nosotros";
-@import "../css/partials/peliculas";
-@import "../css/partials/footer";
-@import"../css/partials/mods";
-@import "../css/partials/responsive";
-
+@import "../sass/partials/configini";
+@import "../sass/partials/variables";
+@import "../sass/partials/header";
+@import "../sass/partials/main";
+@import "../sass/partials/noticias";
+@import "../sass/partials/actores";
+@import "../sass/partials/contacto";
+@import "../sass/partials/nosotros";
+@import "../sass/partials/peliculas";
+@import "../sass/partials/footer";
+@import "../sass/partials/mods";
+@import "../sass/partials/responsive";
+@import "../sass/partials/mixins";
 
 
 
