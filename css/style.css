@@ -158,7 +158,8 @@ main {
 .seccion {
   text-align: center; }
   .seccion h2 {
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    background-color: #053650; }
   .seccion__article {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +182,7 @@ main {
       .seccion__article__div--spanhover {
         display: none;
         position: absolute;
-        left: 35%;
+        left: 30%;
         bottom: 55%;
         padding: 0 1rem;
         border-style: solid;
