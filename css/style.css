@@ -23,11 +23,15 @@ header {
   background-color: #053650; }
 
 .dpelicula {
-  position: absolute;
-  left: 33px;
-  bottom: 30px;
-  font-size: 1rem;
-  font-weight: 600; }
+  color: #ffffff; }
+  .dpelicula:hover {
+    color: #ffffff; }
+  .dpelicula h1 {
+    position: absolute;
+    left: 33px;
+    bottom: 30px;
+    font-size: 1rem;
+    font-weight: 600; }
 
 h2,
 h3 {
@@ -154,7 +158,8 @@ main {
 .seccion {
   text-align: center; }
   .seccion h2 {
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    background-color: #053650; }
   .seccion__article {
     display: flex;
     flex-wrap: wrap;
@@ -500,7 +505,9 @@ a i {
     align-items: center; }
   .nosotros__equipo__integrantes {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .btn {
+    display: none; } }
 
 /*----------------MEDIA 991----------------*/
 @media screen and (max-width: 991px) {
