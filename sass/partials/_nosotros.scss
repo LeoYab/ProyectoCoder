@@ -1,7 +1,7 @@
 /*----------------NOSOTROS----------------*/
 
 .nosotros {
-    margin: map-get($generic , margin );
+    margin: map-get($generic , margin ) 0;
 
     &__seccion {
         @include font400;

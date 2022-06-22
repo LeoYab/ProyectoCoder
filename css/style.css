@@ -335,7 +335,7 @@ main {
 
 /*----------------NOSOTROS----------------*/
 .nosotros {
-  margin: 1rem; }
+  margin: 1rem 0; }
   .nosotros__seccion {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
