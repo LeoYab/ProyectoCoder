@@ -17,7 +17,7 @@
         &__div2-2,
         &__div2-3,
         &__div2-4 {
-            text-align: map-get($generic , text-align );
+            text-align: map-get($generic , text-align);
             margin: 1em;
             background-color: #ffffff0a;
             border-radius: 20px;
@@ -30,11 +30,18 @@
             }
 
             & h3 {
-                text-align: map-get($generic , text-align );
+                text-align: map-get($generic , text-align);
                 margin-bottom: 1rem;
             }
         }
+        @for $i from 1 through 4 {
 
+            &__div2-#{$i} p {
+                font-family: $fontkanit;
+                font-weight: 200;
+                text-align: justify;
+            }
+        }
         &__div2-1 {
             grid-area: seccion1;
 

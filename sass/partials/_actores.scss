@@ -39,14 +39,6 @@
                 margin: 0 1rem 0 0;
             }
         }
-
-        @for $i from 1 through 4 {
-
-            &__div2-#{$i} p {
-                font-family: $fontkanit;
-                font-weight: 200;
-            }
-        }
         
         &__div1 p,
         &__div2 p {

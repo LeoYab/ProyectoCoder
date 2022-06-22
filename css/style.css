@@ -212,6 +212,26 @@ main {
     text-align: center;
     margin-bottom: 1rem; }
 
+.secciongridart__seccion__div2-1 p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  text-align: justify; }
+
+.secciongridart__seccion__div2-2 p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  text-align: justify; }
+
+.secciongridart__seccion__div2-3 p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  text-align: justify; }
+
+.secciongridart__seccion__div2-4 p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  text-align: justify; }
+
 .secciongridart__seccion__div2-1 {
   grid-area: seccion1; }
   .secciongridart__seccion__div2-1 iframe {
@@ -271,18 +291,6 @@ main {
     .secciongridart__seccion__div2 h3 {
       text-align: right;
       margin: 0 1rem 0 0; }
-  .secciongridart__seccion__div2-1 p {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200; }
-  .secciongridart__seccion__div2-2 p {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200; }
-  .secciongridart__seccion__div2-3 p {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200; }
-  .secciongridart__seccion__div2-4 p {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200; }
   .secciongridart__seccion__div1 p,
   .secciongridart__seccion__div2 p {
     font-family: "Kanit", sans-serif;
