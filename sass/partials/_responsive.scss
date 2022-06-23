@@ -23,7 +23,7 @@
         }
     }
 
-    .btn {
+    .btn-outline-success {
         display: none;
     }
 }
@@ -77,6 +77,15 @@
         &__div {
             display: none;
         }
+    }
+    
+    .login--button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-outline-success {
+        display: block;
     }
 
     .btnvolver {

@@ -514,7 +514,7 @@ a i {
   .nosotros__equipo__integrantes {
     flex-direction: column;
     align-items: center; }
-  .btn {
+  .btn-outline-success {
     display: none; } }
 
 /*----------------MEDIA 991----------------*/
@@ -544,6 +544,11 @@ a i {
     background-attachment: inherit; }
   .parallax__div {
     display: none; }
+  .login--button {
+    display: flex;
+    justify-content: center; }
+  .btn-outline-success {
+    display: block; }
   .btnvolver {
     left: 90%; }
   .lognav {
