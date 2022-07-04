@@ -60,9 +60,15 @@ h3 {
   color: aliceblue;
   margin: 0.5rem;
   text-decoration: none;
-  transition: color 0.2s; }
+  transition: color 0.2s;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
   .nav-item a:hover {
-    color: #0098e9; }
+    color: #0098e9;
+    background-size: 100% 2px; }
 
 .container-fluid {
   width: 100%; }
@@ -74,8 +80,8 @@ h3 {
   --bs-btn-color: #ffffff;
   --bs-btn-border-color: #ffffff;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0098e9;
-  --bs-btn-hover-border-color: #0098e9;
+  --bs-btn-hover-bg: #0c679a;
+  --bs-btn-hover-border-color: #0c679a;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #00679d;
   --bs-btn-active-border-color: #00679d;
@@ -93,7 +99,7 @@ h3 {
   margin-right: 0; }
 
 .btn-primary {
-  background-color: #0f5e89;
+  background-color: #0c679a;
   border-color: #ffffff; }
   .btn-primary:hover {
     background-color: #0098e9;
@@ -107,6 +113,9 @@ h3 {
 main {
   background-color: #161a22;
   overflow: hidden; }
+
+.carousel-caption p {
+  font-weight: 400; }
 
 .parallax, .parallaxpeliculas, .parallaxseries, .parallaxestrenos, .parallaxdrstrg {
   height: 65vh;
@@ -134,7 +143,7 @@ main {
       padding: 10px;
       border: 0.2rem;
       border-style: solid;
-      border-radius: 0.2rem; }
+      border-radius: 0.375rem; }
     .parallax__div a:hover {
       background-color: #0097e938; }
 
@@ -185,7 +194,7 @@ main {
         bottom: 55%;
         padding: 0 1rem;
         border-style: solid;
-        border-radius: 0.2rem;
+        border-radius: 0.375rem;
         border-width: 2px; }
       .seccion__article__div h3 {
         font-family: "Kanit", sans-serif;
@@ -359,6 +368,8 @@ main {
       width: 70%;
       margin: auto;
       text-align: justify; }
+    .nosotros__equipo img {
+      width: 50%; }
     .nosotros__equipo div img {
       width: 40%; }
     .nosotros__equipo__integrantes {
@@ -395,13 +406,15 @@ main {
 
 /*----------------PELICULAS----------------*/
 .infomovie {
-  margin: 1rem; }
+  margin: 1rem 0;
+  padding: 0; }
   .infomovie h2 {
     margin: 2rem 0;
     text-align: center;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    background-color: #053650; }
   .infomovie h3 {
-    margin: 1rem 0; }
+    margin: 1rem; }
   .infomovie p {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
@@ -416,7 +429,7 @@ main {
     width: 80%;
     border-collapse: inherit; }
     .sectiontbl__table tr th {
-      background-color: #00679d; }
+      background-color: #053650; }
     .sectiontbl__table tr td {
       font-family: "Kanit", sans-serif;
       font-weight: 400;
@@ -532,17 +545,6 @@ a i {
     height: 112px; }
   #logo img {
     display: none; }
-  .parallaxpeliculas {
-    height: 45vh;
-    background-attachment: inherit; }
-  .parallaxseries {
-    height: 45vh;
-    background-attachment: inherit; }
-  .parallaxestrenos {
-    height: 45vh;
-    background-attachment: inherit; }
-  .parallax__div {
-    display: none; }
   .login--button {
     display: flex;
     justify-content: center; }
@@ -556,18 +558,32 @@ a i {
     display: none; }
   .contspan {
     display: block; }
-  .secciongridart__seccion2 {
-    display: grid;
-    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
-    gap: 10px; }
+  .input-group {
+    margin: 1rem 0; }
+  .nav-item a {
+    background-image: none; }
+  /*----------------MAIN----------------*/
+  .parallaxpeliculas, .parallaxseries, .parallaxestrenos, .parallaxdrstrg {
+    height: 45vh;
+    background-attachment: inherit; }
+  .parallax__div {
+    display: none; }
   .seccion__article .owl-nav {
     display: none; }
   .seccion__article__div a:hover span {
     display: none; }
   .seccion__article__div a:hover img {
     transform: none; }
-  .input-group {
-    margin: 1rem 0; } }
+  /*----------------NOTICIAS----------------*/
+  .secciongridart__seccion2 {
+    display: grid;
+    grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4";
+    gap: 10px; }
+  /*----------------NOSOTROS----------------*/
+  .nosotros__seccion {
+    flex-direction: column; }
+    .nosotros__seccion img {
+      width: 80%; } }
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
 @media screen and (max-width: 768px) {
@@ -609,13 +625,7 @@ a i {
 /*-----------------------MEDIA CEL QUERY-------------------------*/
 @media screen and (max-width: 480px) {
   /*----------------MAIN MEDIA CEL----------------*/
-  .parallaxpeliculas {
-    height: 30vh;
-    background-attachment: inherit; }
-  .parallaxseries {
-    height: 30vh;
-    background-attachment: inherit; }
-  .parallaxestrenos {
+  .parallaxpeliculas, .parallaxseries, .parallaxestrenos, .parallaxdrstrg {
     height: 30vh;
     background-attachment: inherit; }
   .parallax__div {
@@ -659,10 +669,6 @@ a i {
     .parallax__div2 h3 {
       font-size: 1rem; }
   /*----------------NOSOTROS MEDIA CEL----------------*/
-  .nosotros__seccion {
-    flex-direction: column; }
-    .nosotros__seccion img {
-      width: 80%; }
   .nosotros__equipo__integrantes {
     flex-direction: column;
     row-gap: 20px;

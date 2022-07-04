@@ -1,16 +1,18 @@
 /*----------------PELICULAS----------------*/
 
 .infomovie {
-    margin: 1rem;
+    margin: 1rem 0;
+    padding: 0;
 
     & h2 {
         margin: 2rem 0;
         text-align: center;
         font-size: 2.5rem;
+        background-color: $azulhf;
     }
 
     & h3 {
-        margin: 1rem 0;
+        margin: 1rem;
     }
 
     & p {
@@ -32,7 +34,7 @@
         & tr {
 
             & th {
-                background-color: #00679d;
+                background-color: $azulhf;
             }
 
             & td {

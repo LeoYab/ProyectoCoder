@@ -57,27 +57,6 @@
     #logo img {
         display: none;
     }
-    .parallax {
-
-        &peliculas {
-            height: 45vh;
-            background-attachment: inherit;
-        }
-
-        &series {
-            height: 45vh;
-            background-attachment: inherit;
-        }
-
-        &estrenos {
-            height: 45vh;
-            background-attachment: inherit;
-        }
-
-        &__div {
-            display: none;
-        }
-    }
     
     .login--button {
         display: flex;
@@ -104,15 +83,26 @@
         display: block;
     }
 
-    .secciongridart__seccion2 {
+    .input-group {
+        margin: 1rem 0;
+    }
 
-        display: grid;
-        grid-template-areas:
-            "seccion1"
-            "seccion2"
-            "seccion3"
-            "seccion4";
-        gap: 10px;
+    .nav-item a {
+        background-image:none;
+    }
+
+    /*----------------MAIN----------------*/
+
+    .parallax {
+
+        &peliculas, &series, &estrenos, &drstrg {
+            height: 45vh;
+            background-attachment: inherit;
+        }
+
+        &__div {
+            display: none;
+        }
     }
 
     .seccion__article {
@@ -130,13 +120,28 @@
         }
     }
 
-    .input-group {
-        margin: 1rem 0;
+     /*----------------NOTICIAS----------------*/
+
+    .secciongridart__seccion2 {
+
+        display: grid;
+        grid-template-areas:
+            "seccion1"
+            "seccion2"
+            "seccion3"
+            "seccion4";
+        gap: 10px;
+    }
+     /*----------------NOSOTROS----------------*/
+     .nosotros__seccion {
+        flex-direction: column;
+
+        & img {
+            width: 80%;
+        }
     }
 
 }
-
-
 
 /*-----------------------MEDIA TABLET QUERY-------------------------*/
 
@@ -214,17 +219,7 @@
     /*----------------MAIN MEDIA CEL----------------*/
     .parallax {
 
-        &peliculas {
-            height: 30vh;
-            background-attachment: inherit;
-        }
-
-        &series {
-            height: 30vh;
-            background-attachment: inherit;
-        }
-
-        &estrenos {
+        &peliculas, &series, &estrenos, &drstrg  {
             height: 30vh;
             background-attachment: inherit;
         }
@@ -303,13 +298,6 @@
 
     /*----------------NOSOTROS MEDIA CEL----------------*/
 
-    .nosotros__seccion {
-        flex-direction: column;
-
-        & img {
-            width: 80%;
-        }
-    }
 
     .nosotros__equipo__integrantes {
         flex-direction: column;

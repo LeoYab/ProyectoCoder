@@ -61,8 +61,15 @@ h3 {
     text-decoration: none;
     transition: color 0.2s;
 
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
     &:hover {
         color: $colorbtnin;
+        background-size: 100% 2px;
     }
 }
 
@@ -78,8 +85,8 @@ h3 {
     --bs-btn-color: #ffffff;
     --bs-btn-border-color: #ffffff;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #0098e9;
-    --bs-btn-hover-border-color: #0098e9;
+    --bs-btn-hover-bg: #0c679a;
+    --bs-btn-hover-border-color: #0c679a;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #00679d;
     --bs-btn-active-border-color: #00679d;
@@ -101,7 +108,7 @@ h3 {
 }
 
 .btn-primary {
-    background-color: #0f5e89;
+    background-color: #0c679a;
     border-color: #ffffff;
 
     &:hover {
