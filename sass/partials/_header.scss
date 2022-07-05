@@ -120,4 +120,8 @@ h3 {
 
 .btn {
     --bs-btn-focus-box-shadow: none;
+
+    &:hover{
+        background-color: $colorbtnin;
+    }
 }

@@ -108,6 +108,8 @@ h3 {
 
 .btn {
   --bs-btn-focus-box-shadow: none; }
+  .btn:hover {
+    background-color: #0098e9; }
 
 /*----------------MAIN----------------*/
 main {
